@@ -23,6 +23,11 @@ public class PCLineTracer {
 		Socket socket_  = null;
 		final int PORT_ = 12345;
 		
+		if (args.length == 0) {
+			System.out.println("Usage: PCLineTracer [IPAddress(xxx.xxx.xxx.xxx)]");
+			System.exit(0);
+		}
+		
 		try {
 			socket_ = new Socket(args[0], PORT_);
 			BufferedReader in = new BufferedReader(new InputStreamReader(socket_.getInputStream()));
