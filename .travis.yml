@@ -6,4 +6,5 @@ install:
 
 script:
  - mvn compile
+ - mvn javadoc:javadoc
 

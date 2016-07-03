@@ -17,7 +17,7 @@ import java.net.UnknownHostException;
 public class PCLineTracer {
 
 	/**
-	 * @param args
+	 * @param args	引数/接続先のLEGO Mindstorms EV3のアドレスを設定する
 	 */
 	public static void main(String[] args) {
 		Socket socket_  = null;
